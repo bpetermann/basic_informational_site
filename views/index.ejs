@@ -3,11 +3,27 @@
 
   <body class="text-bg-light">
     <%- include('includes/navbar.ejs') %>
-<main>
-    <div class="container mt-3">
-        <h2>The Home Page</h2>
-    </div>
-</main>
+    <main>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col">
+              <h2>Home</h2>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  A very basic informational site built with NodeJs/Express
+                </li>
+                <li class="list-group-item">Dynamic Content is added via EJS</li>
+                <li class="list-group-item">
+                  A 404.html is displayed if the requested page doesn't exist
+                </li>
+                <li class="list-group-item">
+                  Contact me input is displayed in the console
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </main>
     <%- include('includes/html-end.ejs') %>
 
 

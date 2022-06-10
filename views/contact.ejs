@@ -4,10 +4,34 @@
   <body>
     <%- include('includes/navbar.ejs') %>
     <main>
-        <div class="container mt-3">
-            <h2>The Contact Page</h2>
-        </div>
+      <div class="container mt-3">
+        <h2>Contact</h2>
+          <form action="/contact-me" method="POST">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Adress</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                aria-describedby="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your message</label>
+              <input
+                type="text"
+                name="message"
+                class="form-control"
+                id="message"
+                aria-describedby="message"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+      </div>
     </main>
+    
     <%- include('includes/html-end.ejs') %>
 
 
