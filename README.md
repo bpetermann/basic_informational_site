@@ -1,6 +1,7 @@
 # A Basic Node.js Website
 
-Just learning Node.js by making a basic informational website.
+- Just learning Node.js by making a basic informational website
+- [View Live on Repl](https://basicinformationalsite.bpetermann.repl.co/)
 
 ### Tools
 
