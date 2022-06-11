@@ -6,7 +6,7 @@ const rootDir = require('../util/path');
 
 const router = express.Router();
 
-const contacts = [];
+const comments = [];
 
 router.get('/contact-me', (req, res, next) => {
   res.render('contact', {
@@ -15,9 +15,9 @@ router.get('/contact-me', (req, res, next) => {
 });
 
 router.post('/contact-me', (req, res, next) => {
-  contacts.push({ message: req.body.message, email: req.body.email });
-  console.log(contacts);
+  comments.push({ message: req.body.message, email: req.body.email });
   res.redirect('/');
 });
 
+exports.comments = comments;
 exports.routes = router;
