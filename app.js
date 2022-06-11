@@ -1,8 +1,5 @@
 const path = require('path');
-
 const express = require('express');
-const bodyParser = require('body-parser');
-
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -12,7 +9,7 @@ const indexRoutes = require('./routes/index');
 const aboutRoutes = require('./routes/about');
 const contactRoutes = require('./routes/contact-me');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(indexRoutes.routes);
