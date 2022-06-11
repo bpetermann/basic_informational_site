@@ -2,8 +2,6 @@ const path = require('path');
 
 const express = require('express');
 
-const rootDir = require('../util/path');
-
 const router = express.Router();
 
 const comments = [];
@@ -11,6 +9,7 @@ const comments = [];
 router.get('/contact-me', (req, res, next) => {
   res.render('contact', {
     pageTitle: 'Contact',
+    path: '/contact-me',
   });
 });
 
